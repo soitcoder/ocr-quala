@@ -16,10 +16,6 @@ app.use(cors());
 
 const mongoose = require('mongoose');
 
-// mongoose.connect('mongodb://soitcoder:newton123@nodeexpressprojets.ebus4wl.mongodb.net/?retryWrites=true&w=majority', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
 
 const textSchema = new mongoose.Schema({
   extractedText: String,
