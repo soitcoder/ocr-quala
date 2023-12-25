@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR</title>
+</head>
+<body>
+    <form action="/extract" method="post" enctype="multipart/form-data">
+    <label for="file">Upload image : </label>
+    <input type="file" name ="file" accept="image/*" required id="">
+    <button>perform ocr</button>
+    </form>
+    <textarea cols="30" rows="10">
+        <%=data%>
+    </textarea>
+</body>
+</html>
