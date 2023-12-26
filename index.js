@@ -129,6 +129,8 @@ app.post("/extract", upload.single('file'), async (req, res) => {
 
 });
 
-app.listen(27017, () => {
+const PORT = process.env.PORT || 27017
+
+app.listen(PORT, () => {
   console.log("App is listening on port 5000");
 });
